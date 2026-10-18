@@ -1,0 +1,1 @@
+Adarkblood-gtk-theme~TX

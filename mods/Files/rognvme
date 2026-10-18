@@ -1,0 +1,24 @@
+[Unit]
+Description=Cryptography Setup for ROG NVMe
+DefaultDependencies=no
+IgnoreOnIsolate=true
+After=cryptsetup-pre.target systemd-udevd-kernel.socket
+Before=blockdev@dev-mapper-rognvme.target
+Wants=blockdev@dev-mapper-rognvme.target
+Conflicts=umount.target
+Before=cryptsetup.target
+BindsTo=dev-disk-by\x2duuid-1b4ecc00\x2dcb1a\x2d11f1\x2d888e\x2dfcb3bcf9a60a.device
+After=dev-disk-by\x2duuid-1b4ecc00\x2dcb1a\x2d11f1\x2d888e\x2dfcb3bcf9a60a.device
+Before=umount.target
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+TimeoutSec=30
+KeyringMode=shared
+OOMScoreAdjust=500
+ExecStart=/lib/systemd/systemd-cryptsetup attach 'rognvme' '/dev/disk/by-uuid/1b4ecc00-cb1a-11f1-888e-fcb3bcf9a60a' 'none' 'luks,discard'
+ExecStop=/lib/systemd/systemd-cryptsetup detach 'rognvme'
+
+[Install]
+WantedBy=cryptsetup.target

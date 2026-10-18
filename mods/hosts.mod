@@ -1,0 +1,1 @@
+C/etc/hosts~X

@@ -1,0 +1,12 @@
+Rlaptop~
+Rnvidia~
+Rhosts~
+Rplasma~
+Rcompiz~
+Rfirefox~
+Rwallpapers~
+Rnmoff~
+RNetLogin~
+Abtrfs-progs~
+Rkveroneau~
+X

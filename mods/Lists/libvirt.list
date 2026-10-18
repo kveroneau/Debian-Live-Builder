@@ -1,0 +1,16 @@
+libvirt-daemon-system
+libvirt-daemon-driver-lxc
+qemu-kvm
+qemu-utils
+libnss-mymachines
+libnss-libvirt
+dnsmasq-base
+virt-manager
+virt-viewer
+gir1.2-spiceclientglib-2.0
+gir1.2-spiceclientgtk-3.0
+btrfs-progs
+vde2
+vdetelweb
+libvdeplug-dev
+ovmf

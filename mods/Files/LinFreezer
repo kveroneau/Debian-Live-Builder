@@ -1,0 +1,4 @@
+#!/bin/sh
+
+cd /home
+tar -xzf /opt/LinFreezer.tgz

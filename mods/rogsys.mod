@@ -1,0 +1,23 @@
+VROG System~
+Rrog~a
+Rplasma-dev~
+Rcompiz~
+R86box_4.2_amd64~
+Rtapdev~
+Rfirefox~
+Rgoogle-chrome~
+Rlibvirt~
+Rdocker~
+Rnsswitch~
+Rgames~
+Rarculator~
+RRootDaemon~
+Robs~
+Rkdenlive~
+Rkoffice~
+Rrogipt~
+Rrognvme~
+Sbreeze-text~
+Alibsdl2-net-2.0-0~Alibsdl2-ttf-2.0-0~
+Alive-build~
+TX
